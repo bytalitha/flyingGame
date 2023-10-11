@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Aladdin</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="start-screen" class="overlay">
+        <h1>Flying Aladdin</h1>
+        <p>Ontwijk de rotsen!</p>
+        <p>Kies een achtergrond:</p>
+        <div class="background-selector">
+            <button id="background1"><img class="buttonImg" src="images/caveOutside.jpg" alt="cave outside"></button>
+            <button id="background2"><img class="buttonImg" src="images/cavesOfWonders.jpg" alt="caves of wonders"></button>
+            <button id="background3"><img class="buttonImg" src="images/castle.jpg" alt="castle"></button>
+        </div>
+        <button id="start-button">Play</button>
+    </div>
+
+    <div id="image-container">
+        <img id="movable-image" src="images/aladdin.png" alt="Aladdin">
+    </div>
+
+    <div id="score">Score: 0</div>
+
+    <div id="replay-screen" style="display: none;">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="final-score">0</span></p>
+        <button id="replay-button">Replay</button>
+    </div>
+
+    <audio id="coinSound" src="coinSound.mp3"></audio>
+    <audio id="gameOverSound" src="gameOverSound.mp3"></audio>
+
+</body>
+
+</html>
