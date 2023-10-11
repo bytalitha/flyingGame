@@ -1,0 +1,152 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+p {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.868);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+}
+
+.overlay h1 {
+    font-size: 80px;
+    margin-top: 50px;
+    color: #b89e14;
+    font-family: 'Aladin'
+}
+
+.overlay button {
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #1215cf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.overlay button:hover {
+    opacity: 0.8;
+}
+
+#image-container {
+    position: absolute;
+}
+
+#movable-image {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 250px;
+    z-index: 9998;
+}
+
+.coin {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.genieOilLamp {
+    position: absolute;
+    width: 50px;
+}
+
+.boulder {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    z-index: 9999;
+}
+
+#replay-screen {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#replay-screen h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #b89e14;
+    font-family: 'Aladin'
+}
+
+#replay-screen p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#replay-button {
+    background-color: #1215cf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#replay-button:hover {
+    opacity: 0.8;
+}
+
+#start-button {
+    display: none;
+}
+
+.background-selector {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#coinSound #gameOverSound {
+    display: none;
+}
+
+#background1, #background2, #background3 {
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.buttonImg {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
